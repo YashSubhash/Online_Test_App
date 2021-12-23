@@ -1,0 +1,90 @@
+<nav class="navbar navbar-light bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand">
+        <img src="assets/image/html_logo.png" alt="" width="50" height="50">
+    <span class="text-uppercase"><b>HTML Test</b></span>  
+    </a>
+
+    </div>
+  </nav>
+
+
+
+<div class="container mt-5">
+    <div class="card">
+        <div class="d-flex justify-content-between p-3">
+            <div class="image">
+                <img src="assets/image/html_logo.png" width="90" alt="logo">
+            </div>
+            <div class="quiz-header">
+                <h4 style="font-family: cursive;">html Quiz!</h4>
+                <span style="font-style: italic;">Welcome {{ name }}</span>
+
+            </div>
+
+        </div>
+
+
+        <ng-container *ngIf="!isQuizCompleted">
+        <div class="d-flex justify-content-around py-3">
+          
+            <div class="questions-remain">
+                <span style="font-style:italic;">{{currentQuestion+1}} of {{questionList.length}}</span>
+
+            </div>
+            <div class="timer">
+                {{counter}} sec⏰
+                        </div>
+
+        </div>
+        <div class="progress mb-3">
+            <div class="progress-bar bg-success"
+             role="progressbar" [ngStyle]="{'width':progress+'%'}" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+            </div>
+          </div>
+          <div class="question">
+              <div class="card">
+                  <h3>{{ questionList[currentQuestion]?.questionText }}</h3>
+              </div>
+          </div>
+          <div class="options">
+              <ol *ngFor="let option of questionList[currentQuestion]?.options">
+                  <li (click)="answer(currentQuestion+1,option)">
+                      <div class="card">
+                          {{ option.text }}
+
+                      </div>
+                  </li>
+                 
+              </ol>
+
+          </div>
+          <div class="d-flex justify-content-between">
+            <button [disabled]="currentQuestion==0" class="btn" (click)="previousQuetion()"><i class="fa text-primary fa-chevron-left fa-3x" aria-hidden="true"></i></button>
+ 
+            <button [disabled]="currentQuestion==4" class="btn" (click)="nextQuestion()"><i class="fa text-primary fa-chevron-right fa-3x" aria-hidden="true"></i></button>
+          </div>
+        </ng-container>
+
+ 
+
+
+      <ng-container *ngIf="isQuizCompleted">
+          <div class="row d-flex justify-content-between">
+        <div class="result text-center col-md-6 col-sm-12">
+            <h3>congradulations you have completed quiz</h3>
+            <p>Total question attempted:{{questionList.length}}</p>
+            <p>Total correct answerd: {{correctAnswer}}</p>
+            <p>Total wrong questions:{{incorrectAnswer}} </p>
+            <p>your score:{{points}} points</p>
+            <button class="btn btn-primary btn-lg" routerLink="/javascriptquestion">Go to next section</button><br><br>
+            <button class="btn btn-secondary btn-lg" routerLink="/testsection">Go to Test Section</button>
+
+        </div>
+    </div>
+</ng-container>
+
+</div>
+
+
+

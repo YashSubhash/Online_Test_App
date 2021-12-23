@@ -1,0 +1,97 @@
+
+{
+    "questions": [{
+            "questionText": "What is DOM in HTML?",
+            "options": [{
+                    "text": "Convention for representing and interacting with objects in html documents",
+                    "correct": true
+                },
+                {
+                    "text": "Language dependent application programming"
+                },
+                {
+                    "text": "Hierarchy of objects in ASP.NET"
+                },
+                {
+                    "text": "Convention for representing and interacting with objects in html documents"
+                }
+            ],
+            "explanation": "The Document Object Model is a cross-platform and language-independent application programming interface that treats an HTML, XHTML"
+        },
+        {
+            "questionText": " In which part of the HTML metadata is contained?",
+            "options": [{
+                    "text": "title tag"
+                },
+                {
+                    "text": "html tag"
+                },
+                {
+                    "text": "body tag"
+                },
+                {
+                    "text": "head tag",
+                    "correct": true
+                }
+            ],
+            "explanation": " The body tag defines document’s body. A title tag is an HTML element which specifies the title of a web page."
+        },
+        {
+            "questionText": "404 HTTP error is generated due to ____________",
+            "options": [{
+                    "text": "on removing the newline characte."
+                },
+                {
+                    "text": "any missing file.",
+                    "correct": true
+                },
+                {
+                    "text": "missing JavaScript file"
+                },
+                {
+                    "text": "slow loading of the web page."
+                }
+            ],
+            "explanation": "HTTP 404 is an error that indicates that the client was able to communicate with the server but the server could not find the request. "
+        },
+        {
+            "questionText": "Which element is used for or styling HTML5 layout?",
+            "options": [{
+                    "text": "jQuery"
+                },
+                {
+                    "text": "CSS",
+                    "correct": true
+                },
+                {
+                    "text": "JavaScript"
+                },
+                {
+                    "text": "PHP"
+                }
+            ],
+            "explanation": "For styling HTML5, CSS i.e Cascading Style Sheet is used. "
+        },
+        {
+            "questionText": "Which of the following HTML tag is used to create an unordered list?",
+            "options": [{
+                    "text": "<ul>",
+                    "correct": true
+                },
+                {
+                    "text": "<ol>"
+                },
+                {
+                    "text": "<li>"
+                },
+                {
+                    "text": "<ll>"
+                }
+            ],
+            "explanation": " <ul> tag is used to create the unordered list items in an HTML document. By default, unordered list items will display in a bulleted format."
+        }
+       
+       
+        
+    ]
+}

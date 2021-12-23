@@ -1,0 +1,20 @@
+<div class="container" style="background: rgb(21, 146, 63);">
+  <h1 style="text-align: center;">Welcome to Online Test App</h1>
+</div>
+
+<div class="container bg-light py-5">
+<ol>
+  <li><b>Test contains 4 sections</b></li>
+
+  <li><b> Each Section contains 5 questions</b></li>
+    <li><b>Correct questions gives you 10 points</b></li>
+    <li><b>You will have 60 sec to answer each questions</b></li>
+ 
+</ol>
+<marquee direction="right"><h3>All the Best</h3></marquee>
+<div class="name col-md-4 my-3">
+    <label for="" >Enter your name</label>
+    <input #name type="text" class="form-control" required>
+</div>
+<button class="btn btn-primary btn-lg" routerLink="/testsection" (click)="startQuiz()">Start the Quiz</button>
+</div>

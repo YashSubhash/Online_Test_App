@@ -1,0 +1,14 @@
+/* .t1{
+    list-style-type: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+.t1 .card:hover{
+    border: 1px solid blue;
+} */
+
+
+img:hover {
+    cursor: pointer;
+    
+}

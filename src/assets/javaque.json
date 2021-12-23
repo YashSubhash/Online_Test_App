@@ -1,0 +1,98 @@
+
+{
+    "questions": [{
+            "questionText": "Which of these cannot be used for a variable name in Java?",
+            "options": [{
+                    "text": "keyword",
+                    "correct": true
+                },
+                {
+                    "text": "identifier & keyword"
+                },
+                {
+                    "text": "identifier"
+                },
+                {
+                    "text": "none of the mentioned"
+                }
+            ],
+            "explanation": "Array arr contains 10 elements. n contains 6 thus in next line n is given value 3 printing arr[3]/2 i:e 3/2 = 1 because of int Value, by int values there is no rest. If this values would be float the result would be 1.5"
+           
+        },
+        {
+            "questionText": "Which of the following is a type of polymorphism in Java Programming?",
+            "options": [{
+                    "text": "Multiple polymorphism"
+                },
+                {
+                    "text": "Execution time polymorphism"
+                },
+                {
+                    "text": " Multilevel polymorphism"
+                },
+                {
+                    "text": "Compile time polymorphism",
+                    "correct": true
+                }
+            ],
+            "explanation": "enum is not used as a type in TypeScript"
+        },
+        {
+            "questionText": " Which of these class is a superclass of every class in Java?",
+            "options": [{
+                    "text": "ArrayList class."
+                },
+                {
+                    "text": "Object class.",
+                    "correct": true
+                },
+                {
+                    "text": "Abstract class"
+                },
+                {
+                    "text": "String class"
+                }
+            ],
+            "explanation": "  Object class is superclass of every class in Java."
+        },
+        {
+            "questionText": " Which exception is thrown when java is out of memory?",
+            "options": [{
+                    "text": "MemoryError"
+                },
+                {
+                    "text": "OutOfMemoryError",
+                    "correct": true
+                },
+                {
+                    "text": "MemoryOutOfBoundsException"
+                },
+                {
+                    "text": "MemoryFullException"
+                }
+            ],
+            "explanation": "The Xms flag has no default value, and Xmx typically has a default value of 256MB. A common use for these flags is when you encounter a java.lang.OutOfMemoryError."
+        },
+        {
+            "questionText": "Which of these keywords are used for the block to be examined for exceptions?",
+            "options": [{
+                    "text": " try",
+                    "correct": true
+                },
+                {
+                    "text": "check"
+                },
+                {
+                    "text": "throw"
+                },
+                {
+                    "text": "catch"
+                }
+            ],
+            "explanation": "try is used for the block that needs to checked for exception."
+        }
+       
+       
+        
+    ]
+}
